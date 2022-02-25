@@ -1,6 +1,6 @@
 ﻿namespace Artifacts_Downloader
 {
-    partial class Form1
+    partial class index
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -28,14 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(index));
             this.btnRecommended = new System.Windows.Forms.Button();
             this.btnOptional = new System.Windows.Forms.Button();
             this.btnLatest = new System.Windows.Forms.Button();
             this.btnCritical = new System.Windows.Forms.Button();
             this.pgsDownload = new System.Windows.Forms.ProgressBar();
             this.download = new System.Windows.Forms.Label();
-            this.status = new System.Windows.Forms.Label();
+            this.signature = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnRecommended
@@ -80,9 +80,9 @@
             // 
             // pgsDownload
             // 
-            this.pgsDownload.Location = new System.Drawing.Point(115, 339);
+            this.pgsDownload.Location = new System.Drawing.Point(-2, 399);
             this.pgsDownload.Name = "pgsDownload";
-            this.pgsDownload.Size = new System.Drawing.Size(373, 23);
+            this.pgsDownload.Size = new System.Drawing.Size(607, 22);
             this.pgsDownload.TabIndex = 4;
             this.pgsDownload.Click += new System.EventHandler(this.pgsDownload_Click);
             // 
@@ -97,24 +97,24 @@
             this.download.TabIndex = 5;
             this.download.Text = "Download";
             // 
-            // status
+            // signature
             // 
-            this.status.AutoSize = true;
-            this.status.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.status.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.status.Location = new System.Drawing.Point(112, 320);
-            this.status.Name = "status";
-            this.status.Size = new System.Drawing.Size(44, 16);
-            this.status.TabIndex = 6;
-            this.status.Text = "Status";
+            this.signature.AutoSize = true;
+            this.signature.Font = new System.Drawing.Font("Bahnschrift Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.signature.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.signature.Location = new System.Drawing.Point(0, 373);
+            this.signature.Name = "signature";
+            this.signature.Size = new System.Drawing.Size(119, 23);
+            this.signature.TabIndex = 6;
+            this.signature.Text = "Created by nikit0";
             // 
-            // Form1
+            // index
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(604, 420);
-            this.Controls.Add(this.status);
+            this.Controls.Add(this.signature);
             this.Controls.Add(this.download);
             this.Controls.Add(this.pgsDownload);
             this.Controls.Add(this.btnCritical);
@@ -123,7 +123,9 @@
             this.Controls.Add(this.btnRecommended);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form1";
+            this.MaximizeBox = false;
+            this.Name = "index";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Artifacts Downloader";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -138,7 +140,7 @@
         private System.Windows.Forms.Button btnCritical;
         private System.Windows.Forms.ProgressBar pgsDownload;
         private System.Windows.Forms.Label download;
-        private System.Windows.Forms.Label status;
+        private System.Windows.Forms.Label signature;
     }
 }
 
