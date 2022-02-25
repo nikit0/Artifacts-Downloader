@@ -42,6 +42,7 @@
             // 
             // btnRecommended
             // 
+            this.btnRecommended.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRecommended.Location = new System.Drawing.Point(115, 101);
             this.btnRecommended.Name = "btnRecommended";
             this.btnRecommended.Size = new System.Drawing.Size(170, 87);
@@ -52,6 +53,7 @@
             // 
             // btnOptional
             // 
+            this.btnOptional.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnOptional.Location = new System.Drawing.Point(318, 101);
             this.btnOptional.Name = "btnOptional";
             this.btnOptional.Size = new System.Drawing.Size(170, 87);
@@ -62,6 +64,7 @@
             // 
             // btnLatest
             // 
+            this.btnLatest.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLatest.Location = new System.Drawing.Point(115, 207);
             this.btnLatest.Name = "btnLatest";
             this.btnLatest.Size = new System.Drawing.Size(170, 87);
@@ -72,6 +75,7 @@
             // 
             // btnCritical
             // 
+            this.btnCritical.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCritical.Location = new System.Drawing.Point(318, 207);
             this.btnCritical.Name = "btnCritical";
             this.btnCritical.Size = new System.Drawing.Size(170, 87);
