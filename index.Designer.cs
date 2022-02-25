@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(index));
             this.btnRecommended = new System.Windows.Forms.Button();
             this.btnOptional = new System.Windows.Forms.Button();
@@ -36,6 +37,7 @@
             this.pgsDownload = new System.Windows.Forms.ProgressBar();
             this.download = new System.Windows.Forms.Label();
             this.signature = new System.Windows.Forms.Label();
+            this.tProgress = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // btnRecommended
@@ -84,7 +86,6 @@
             this.pgsDownload.Name = "pgsDownload";
             this.pgsDownload.Size = new System.Drawing.Size(607, 22);
             this.pgsDownload.TabIndex = 4;
-            this.pgsDownload.Click += new System.EventHandler(this.pgsDownload_Click);
             // 
             // download
             // 
@@ -107,6 +108,10 @@
             this.signature.Size = new System.Drawing.Size(119, 23);
             this.signature.TabIndex = 6;
             this.signature.Text = "Created by nikit0";
+            // 
+            // tProgress
+            // 
+            this.tProgress.Tick += new System.EventHandler(this.tProgress_Tick);
             // 
             // index
             // 
@@ -141,6 +146,7 @@
         private System.Windows.Forms.ProgressBar pgsDownload;
         private System.Windows.Forms.Label download;
         private System.Windows.Forms.Label signature;
+        private System.Windows.Forms.Timer tProgress;
     }
 }
 

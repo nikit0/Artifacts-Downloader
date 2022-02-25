@@ -36,6 +36,9 @@ namespace Artifacts_Downloader
 
         private void artifactsDownload(string file)
         {
+            pgsDownload.Value = 0;
+            tProgress.Start();
+
             WebClient client = new WebClient();
             string url = client.DownloadString("https://changelogs-live.fivem.net/api/changelog/versions/win32/server");
             dynamic dynamic = JsonConvert.DeserializeObject<dynamic>(url);
@@ -54,13 +57,20 @@ namespace Artifacts_Downloader
             string zipFilePath = $@"artifacts\{file}.zip";
             string extractionPath = @"artifacts";
             ZipFile.ExtractToDirectory(zipFilePath, extractionPath);
-            MessageBox.Show("Download and Extracted completed.");
             File.Delete(zipFilePath);
         }
 
-        private void pgsDownload_Click(object sender, EventArgs e)
+        private void tProgress_Tick(object sender, EventArgs e)
         {
-            
+            if (pgsDownload.Value < 100)
+            {   
+                pgsDownload.Value += 20;
+            } 
+            else
+            {
+                tProgress.Stop();
+                MessageBox.Show("Download and Extracted completed.");
+            }
         }
     }
 }
