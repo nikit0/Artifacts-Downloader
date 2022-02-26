@@ -35,9 +35,19 @@
             this.btnLatest = new System.Windows.Forms.Button();
             this.btnCritical = new System.Windows.Forms.Button();
             this.pgsDownload = new System.Windows.Forms.ProgressBar();
-            this.download = new System.Windows.Forms.Label();
+            this.downloads = new System.Windows.Forms.Label();
             this.signature = new System.Windows.Forms.Label();
             this.tProgress = new System.Windows.Forms.Timer(this.components);
+            this.txtRecommended = new System.Windows.Forms.Label();
+            this.txtOptional = new System.Windows.Forms.Label();
+            this.txtLatest = new System.Windows.Forms.Label();
+            this.txtCritical = new System.Windows.Forms.Label();
+            this.menuIndex = new System.Windows.Forms.MenuStrip();
+            this.menuFiveM = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuRedM = new System.Windows.Forms.ToolStripMenuItem();
+            this.windowsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.linuxToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuIndex.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnRecommended
@@ -91,16 +101,16 @@
             this.pgsDownload.Size = new System.Drawing.Size(607, 22);
             this.pgsDownload.TabIndex = 4;
             // 
-            // download
+            // downloads
             // 
-            this.download.AutoSize = true;
-            this.download.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.download.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.download.Location = new System.Drawing.Point(231, 51);
-            this.download.Name = "download";
-            this.download.Size = new System.Drawing.Size(143, 31);
-            this.download.TabIndex = 5;
-            this.download.Text = "Download";
+            this.downloads.AutoSize = true;
+            this.downloads.Font = new System.Drawing.Font("Bahnschrift Condensed", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.downloads.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.downloads.Location = new System.Drawing.Point(219, 41);
+            this.downloads.Name = "downloads";
+            this.downloads.Size = new System.Drawing.Size(166, 45);
+            this.downloads.TabIndex = 5;
+            this.downloads.Text = "DOWNLOADS";
             // 
             // signature
             // 
@@ -117,25 +127,119 @@
             // 
             this.tProgress.Tick += new System.EventHandler(this.tProgress_Tick);
             // 
+            // txtRecommended
+            // 
+            this.txtRecommended.AutoSize = true;
+            this.txtRecommended.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txtRecommended.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.txtRecommended.ForeColor = System.Drawing.Color.ForestGreen;
+            this.txtRecommended.Location = new System.Drawing.Point(184, 154);
+            this.txtRecommended.Name = "txtRecommended";
+            this.txtRecommended.Size = new System.Drawing.Size(41, 13);
+            this.txtRecommended.TabIndex = 7;
+            this.txtRecommended.Text = "version";
+            // 
+            // txtOptional
+            // 
+            this.txtOptional.AutoSize = true;
+            this.txtOptional.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txtOptional.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.txtOptional.ForeColor = System.Drawing.Color.ForestGreen;
+            this.txtOptional.Location = new System.Drawing.Point(388, 154);
+            this.txtOptional.Name = "txtOptional";
+            this.txtOptional.Size = new System.Drawing.Size(41, 13);
+            this.txtOptional.TabIndex = 8;
+            this.txtOptional.Text = "version";
+            // 
+            // txtLatest
+            // 
+            this.txtLatest.AutoSize = true;
+            this.txtLatest.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txtLatest.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.txtLatest.ForeColor = System.Drawing.Color.ForestGreen;
+            this.txtLatest.Location = new System.Drawing.Point(184, 259);
+            this.txtLatest.Name = "txtLatest";
+            this.txtLatest.Size = new System.Drawing.Size(41, 13);
+            this.txtLatest.TabIndex = 9;
+            this.txtLatest.Text = "version";
+            // 
+            // txtCritical
+            // 
+            this.txtCritical.AutoSize = true;
+            this.txtCritical.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txtCritical.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.txtCritical.ForeColor = System.Drawing.Color.ForestGreen;
+            this.txtCritical.Location = new System.Drawing.Point(388, 259);
+            this.txtCritical.Name = "txtCritical";
+            this.txtCritical.Size = new System.Drawing.Size(41, 13);
+            this.txtCritical.TabIndex = 10;
+            this.txtCritical.Text = "version";
+            // 
+            // menuIndex
+            // 
+            this.menuIndex.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuFiveM,
+            this.menuRedM});
+            this.menuIndex.Location = new System.Drawing.Point(0, 0);
+            this.menuIndex.Name = "menuIndex";
+            this.menuIndex.Size = new System.Drawing.Size(604, 24);
+            this.menuIndex.TabIndex = 11;
+            this.menuIndex.Text = "menuIndex";
+            // 
+            // menuFiveM
+            // 
+            this.menuFiveM.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.windowsToolStripMenuItem,
+            this.linuxToolStripMenuItem});
+            this.menuFiveM.Name = "menuFiveM";
+            this.menuFiveM.Size = new System.Drawing.Size(51, 20);
+            this.menuFiveM.Text = "FiveM";
+            // 
+            // menuRedM
+            // 
+            this.menuRedM.Name = "menuRedM";
+            this.menuRedM.Size = new System.Drawing.Size(50, 20);
+            this.menuRedM.Text = "RedM";
+            // 
+            // windowsToolStripMenuItem
+            // 
+            this.windowsToolStripMenuItem.Name = "windowsToolStripMenuItem";
+            this.windowsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.windowsToolStripMenuItem.Text = "Windows";
+            // 
+            // linuxToolStripMenuItem
+            // 
+            this.linuxToolStripMenuItem.Name = "linuxToolStripMenuItem";
+            this.linuxToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.linuxToolStripMenuItem.Text = "Linux";
+            // 
             // index
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(604, 420);
+            this.Controls.Add(this.txtCritical);
+            this.Controls.Add(this.txtLatest);
+            this.Controls.Add(this.txtOptional);
+            this.Controls.Add(this.txtRecommended);
             this.Controls.Add(this.signature);
-            this.Controls.Add(this.download);
+            this.Controls.Add(this.downloads);
             this.Controls.Add(this.pgsDownload);
             this.Controls.Add(this.btnCritical);
             this.Controls.Add(this.btnLatest);
             this.Controls.Add(this.btnOptional);
             this.Controls.Add(this.btnRecommended);
+            this.Controls.Add(this.menuIndex);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MainMenuStrip = this.menuIndex;
             this.MaximizeBox = false;
             this.Name = "index";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Artifacts Downloader";
+            this.menuIndex.ResumeLayout(false);
+            this.menuIndex.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -148,9 +252,18 @@
         private System.Windows.Forms.Button btnLatest;
         private System.Windows.Forms.Button btnCritical;
         private System.Windows.Forms.ProgressBar pgsDownload;
-        private System.Windows.Forms.Label download;
+        private System.Windows.Forms.Label downloads;
         private System.Windows.Forms.Label signature;
         private System.Windows.Forms.Timer tProgress;
+        private System.Windows.Forms.Label txtRecommended;
+        private System.Windows.Forms.Label txtOptional;
+        private System.Windows.Forms.Label txtLatest;
+        private System.Windows.Forms.Label txtCritical;
+        private System.Windows.Forms.MenuStrip menuIndex;
+        private System.Windows.Forms.ToolStripMenuItem menuFiveM;
+        private System.Windows.Forms.ToolStripMenuItem windowsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem linuxToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem menuRedM;
     }
 }
 

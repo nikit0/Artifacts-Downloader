@@ -12,6 +12,10 @@ namespace Artifacts_Downloader
         public index()
         {
             InitializeComponent();
+            updateTextVersion("recommended");
+            updateTextVersion("optional");
+            updateTextVersion("latest");
+            updateTextVersion("critical");
         }
 
         private void btnRecommended_Click(object sender, EventArgs e)
@@ -60,6 +64,31 @@ namespace Artifacts_Downloader
             File.Delete(zipFilePath);
         }
 
+        private void updateTextVersion(string file)
+        {
+            WebClient client = new WebClient();
+            string url = client.DownloadString("https://changelogs-live.fivem.net/api/changelog/versions/win32/server");
+            dynamic dynamic = JsonConvert.DeserializeObject<dynamic>(url);
+            string temp = dynamic[file].ToString();
+
+            if (file == "recommended")
+            {
+                txtRecommended.Text = temp;
+            }
+            else if (file == "optional")
+            {
+                txtOptional.Text = temp;
+            }
+            else if (file == "latest")
+            {
+                txtLatest.Text = temp;
+            }
+            else if (file == "critical")
+            {
+                txtCritical.Text = temp;
+            }
+        }
+
         private void tProgress_Tick(object sender, EventArgs e)
         {
             if (pgsDownload.Value < 100)
@@ -69,7 +98,7 @@ namespace Artifacts_Downloader
             else
             {
                 tProgress.Stop();
-                MessageBox.Show("Download and Extracted completed.");
+                MessageBox.Show("Download and Extracted completed.","Warning");
             }
         }
     }
