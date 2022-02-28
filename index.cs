@@ -46,7 +46,7 @@ namespace Artifacts_Downloader
             WebClient client = new WebClient();
             string url = client.DownloadString("https://changelogs-live.fivem.net/api/changelog/versions/win32/server");
             dynamic dynamic = JsonConvert.DeserializeObject<dynamic>(url);
-            string temp = dynamic[file].ToString();
+            string temp = dynamic[file];
             if (Directory.Exists("artifacts"))
             {
                 Directory.Delete("artifacts", true);
@@ -69,7 +69,7 @@ namespace Artifacts_Downloader
             WebClient client = new WebClient();
             string url = client.DownloadString("https://changelogs-live.fivem.net/api/changelog/versions/win32/server");
             dynamic dynamic = JsonConvert.DeserializeObject<dynamic>(url);
-            string temp = dynamic[file].ToString();
+            string temp = dynamic[file];
 
             if (file == "recommended")
             {
