@@ -40,6 +40,7 @@ namespace Artifacts_Downloader
 
         private void artifactsDownload(string file)
         {
+            buttonsBlock(false);
             pgsDownload.Value = 0;
             tProgress.Start();
 
@@ -99,7 +100,16 @@ namespace Artifacts_Downloader
             {
                 tProgress.Stop();
                 MessageBox.Show("Download and Extracted completed.","Warning");
+                buttonsBlock(true);
             }
+        }
+
+        private void buttonsBlock(bool status)
+        {
+            btnRecommended.Enabled = status;
+            btnOptional.Enabled = status;
+            btnLatest.Enabled = status;
+            btnCritical.Enabled = status;
         }
     }
 }
