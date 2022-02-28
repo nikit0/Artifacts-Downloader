@@ -44,9 +44,9 @@
             this.txtCritical = new System.Windows.Forms.Label();
             this.menuIndex = new System.Windows.Forms.MenuStrip();
             this.menuFiveM = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuWindows = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuLinux = new System.Windows.Forms.ToolStripMenuItem();
             this.menuRedM = new System.Windows.Forms.ToolStripMenuItem();
-            this.windowsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.linuxToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuIndex.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -189,29 +189,31 @@
             // menuFiveM
             // 
             this.menuFiveM.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.windowsToolStripMenuItem,
-            this.linuxToolStripMenuItem});
+            this.menuWindows,
+            this.menuLinux});
             this.menuFiveM.Name = "menuFiveM";
             this.menuFiveM.Size = new System.Drawing.Size(51, 20);
             this.menuFiveM.Text = "FiveM";
             // 
+            // menuWindows
+            // 
+            this.menuWindows.Name = "menuWindows";
+            this.menuWindows.Size = new System.Drawing.Size(180, 22);
+            this.menuWindows.Text = "Windows";
+            // 
+            // menuLinux
+            // 
+            this.menuLinux.Enabled = false;
+            this.menuLinux.Name = "menuLinux";
+            this.menuLinux.Size = new System.Drawing.Size(180, 22);
+            this.menuLinux.Text = "Linux";
+            // 
             // menuRedM
             // 
+            this.menuRedM.Enabled = false;
             this.menuRedM.Name = "menuRedM";
             this.menuRedM.Size = new System.Drawing.Size(50, 20);
             this.menuRedM.Text = "RedM";
-            // 
-            // windowsToolStripMenuItem
-            // 
-            this.windowsToolStripMenuItem.Name = "windowsToolStripMenuItem";
-            this.windowsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.windowsToolStripMenuItem.Text = "Windows";
-            // 
-            // linuxToolStripMenuItem
-            // 
-            this.linuxToolStripMenuItem.Name = "linuxToolStripMenuItem";
-            this.linuxToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.linuxToolStripMenuItem.Text = "Linux";
             // 
             // index
             // 
@@ -261,8 +263,8 @@
         private System.Windows.Forms.Label txtCritical;
         private System.Windows.Forms.MenuStrip menuIndex;
         private System.Windows.Forms.ToolStripMenuItem menuFiveM;
-        private System.Windows.Forms.ToolStripMenuItem windowsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem linuxToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem menuWindows;
+        private System.Windows.Forms.ToolStripMenuItem menuLinux;
         private System.Windows.Forms.ToolStripMenuItem menuRedM;
     }
 }
