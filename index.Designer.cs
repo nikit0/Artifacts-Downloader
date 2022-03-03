@@ -53,7 +53,7 @@
             // btnRecommended
             // 
             this.btnRecommended.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRecommended.Location = new System.Drawing.Point(115, 101);
+            this.btnRecommended.Location = new System.Drawing.Point(115, 135);
             this.btnRecommended.Name = "btnRecommended";
             this.btnRecommended.Size = new System.Drawing.Size(170, 87);
             this.btnRecommended.TabIndex = 0;
@@ -64,7 +64,7 @@
             // btnOptional
             // 
             this.btnOptional.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnOptional.Location = new System.Drawing.Point(318, 101);
+            this.btnOptional.Location = new System.Drawing.Point(318, 135);
             this.btnOptional.Name = "btnOptional";
             this.btnOptional.Size = new System.Drawing.Size(170, 87);
             this.btnOptional.TabIndex = 1;
@@ -75,7 +75,7 @@
             // btnLatest
             // 
             this.btnLatest.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLatest.Location = new System.Drawing.Point(115, 207);
+            this.btnLatest.Location = new System.Drawing.Point(115, 241);
             this.btnLatest.Name = "btnLatest";
             this.btnLatest.Size = new System.Drawing.Size(170, 87);
             this.btnLatest.TabIndex = 2;
@@ -86,7 +86,7 @@
             // btnCritical
             // 
             this.btnCritical.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCritical.Location = new System.Drawing.Point(318, 207);
+            this.btnCritical.Location = new System.Drawing.Point(318, 241);
             this.btnCritical.Name = "btnCritical";
             this.btnCritical.Size = new System.Drawing.Size(170, 87);
             this.btnCritical.TabIndex = 3;
@@ -106,7 +106,7 @@
             this.downloads.AutoSize = true;
             this.downloads.Font = new System.Drawing.Font("Bahnschrift Condensed", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.downloads.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.downloads.Location = new System.Drawing.Point(219, 41);
+            this.downloads.Location = new System.Drawing.Point(219, 62);
             this.downloads.Name = "downloads";
             this.downloads.Size = new System.Drawing.Size(166, 45);
             this.downloads.TabIndex = 5;
@@ -133,7 +133,7 @@
             this.txtRecommended.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtRecommended.Cursor = System.Windows.Forms.Cursors.Hand;
             this.txtRecommended.ForeColor = System.Drawing.Color.ForestGreen;
-            this.txtRecommended.Location = new System.Drawing.Point(184, 154);
+            this.txtRecommended.Location = new System.Drawing.Point(184, 188);
             this.txtRecommended.Name = "txtRecommended";
             this.txtRecommended.Size = new System.Drawing.Size(41, 13);
             this.txtRecommended.TabIndex = 7;
@@ -145,7 +145,7 @@
             this.txtOptional.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtOptional.Cursor = System.Windows.Forms.Cursors.Hand;
             this.txtOptional.ForeColor = System.Drawing.Color.ForestGreen;
-            this.txtOptional.Location = new System.Drawing.Point(388, 154);
+            this.txtOptional.Location = new System.Drawing.Point(388, 188);
             this.txtOptional.Name = "txtOptional";
             this.txtOptional.Size = new System.Drawing.Size(41, 13);
             this.txtOptional.TabIndex = 8;
@@ -157,7 +157,7 @@
             this.txtLatest.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtLatest.Cursor = System.Windows.Forms.Cursors.Hand;
             this.txtLatest.ForeColor = System.Drawing.Color.ForestGreen;
-            this.txtLatest.Location = new System.Drawing.Point(184, 259);
+            this.txtLatest.Location = new System.Drawing.Point(184, 293);
             this.txtLatest.Name = "txtLatest";
             this.txtLatest.Size = new System.Drawing.Size(41, 13);
             this.txtLatest.TabIndex = 9;
@@ -169,7 +169,7 @@
             this.txtCritical.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtCritical.Cursor = System.Windows.Forms.Cursors.Hand;
             this.txtCritical.ForeColor = System.Drawing.Color.ForestGreen;
-            this.txtCritical.Location = new System.Drawing.Point(388, 259);
+            this.txtCritical.Location = new System.Drawing.Point(388, 293);
             this.txtCritical.Name = "txtCritical";
             this.txtCritical.Size = new System.Drawing.Size(41, 13);
             this.txtCritical.TabIndex = 10;
@@ -198,14 +198,14 @@
             // menuWindows
             // 
             this.menuWindows.Name = "menuWindows";
-            this.menuWindows.Size = new System.Drawing.Size(180, 22);
+            this.menuWindows.Size = new System.Drawing.Size(123, 22);
             this.menuWindows.Text = "Windows";
             // 
             // menuLinux
             // 
             this.menuLinux.Enabled = false;
             this.menuLinux.Name = "menuLinux";
-            this.menuLinux.Size = new System.Drawing.Size(180, 22);
+            this.menuLinux.Size = new System.Drawing.Size(123, 22);
             this.menuLinux.Text = "Linux";
             // 
             // menuRedM
