@@ -33,11 +33,14 @@
             this.tProgress = new System.Windows.Forms.Timer(this.components);
             this.menuIndex = new System.Windows.Forms.MenuStrip();
             this.menuFiveM = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuWindows = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuLinux = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.menuClose = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuFivemW = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuFivemL = new System.Windows.Forms.ToolStripMenuItem();
             this.menuRedM = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuRedmW = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuHelp = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuChangelogs = new System.Windows.Forms.ToolStripMenuItem();
+            this.separator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.menuAbout = new System.Windows.Forms.ToolStripMenuItem();
             this.pIndex = new System.Windows.Forms.Panel();
             this.signature = new System.Windows.Forms.Label();
             this.fx = new System.Windows.Forms.PictureBox();
@@ -50,7 +53,8 @@
             // 
             this.menuIndex.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuFiveM,
-            this.menuRedM});
+            this.menuRedM,
+            this.menuHelp});
             this.menuIndex.Location = new System.Drawing.Point(0, 0);
             this.menuIndex.Name = "menuIndex";
             this.menuIndex.Size = new System.Drawing.Size(604, 24);
@@ -60,46 +64,82 @@
             // menuFiveM
             // 
             this.menuFiveM.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menuWindows,
-            this.menuLinux,
-            this.toolStripSeparator1,
-            this.menuClose});
+            this.menuFivemW,
+            this.menuFivemL});
+            this.menuFiveM.Image = ((System.Drawing.Image)(resources.GetObject("menuFiveM.Image")));
             this.menuFiveM.Name = "menuFiveM";
-            this.menuFiveM.Size = new System.Drawing.Size(51, 20);
+            this.menuFiveM.Size = new System.Drawing.Size(67, 20);
             this.menuFiveM.Text = "FiveM";
             // 
-            // menuWindows
+            // menuFivemW
             // 
-            this.menuWindows.Name = "menuWindows";
-            this.menuWindows.Size = new System.Drawing.Size(123, 22);
-            this.menuWindows.Text = "Windows";
-            this.menuWindows.Click += new System.EventHandler(this.menuWindows_Click);
+            this.menuFivemW.Image = ((System.Drawing.Image)(resources.GetObject("menuFivemW.Image")));
+            this.menuFivemW.Name = "menuFivemW";
+            this.menuFivemW.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.W)));
+            this.menuFivemW.Size = new System.Drawing.Size(168, 22);
+            this.menuFivemW.Text = "Windows";
+            this.menuFivemW.Click += new System.EventHandler(this.menuFivemW_Click);
             // 
-            // menuLinux
+            // menuFivemL
             // 
-            this.menuLinux.Name = "menuLinux";
-            this.menuLinux.Size = new System.Drawing.Size(123, 22);
-            this.menuLinux.Text = "Linux";
-            this.menuLinux.Click += new System.EventHandler(this.menuLinux_Click);
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(120, 6);
-            // 
-            // menuClose
-            // 
-            this.menuClose.Name = "menuClose";
-            this.menuClose.Size = new System.Drawing.Size(123, 22);
-            this.menuClose.Text = "Close";
-            this.menuClose.Click += new System.EventHandler(this.menuClose_Click);
+            this.menuFivemL.Image = ((System.Drawing.Image)(resources.GetObject("menuFivemL.Image")));
+            this.menuFivemL.Name = "menuFivemL";
+            this.menuFivemL.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.L)));
+            this.menuFivemL.Size = new System.Drawing.Size(168, 22);
+            this.menuFivemL.Text = "Linux";
+            this.menuFivemL.Click += new System.EventHandler(this.menuFivemL_Click);
             // 
             // menuRedM
             // 
+            this.menuRedM.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuRedmW});
+            this.menuRedM.Image = ((System.Drawing.Image)(resources.GetObject("menuRedM.Image")));
             this.menuRedM.Name = "menuRedM";
-            this.menuRedM.Size = new System.Drawing.Size(50, 20);
+            this.menuRedM.Size = new System.Drawing.Size(66, 20);
             this.menuRedM.Text = "RedM";
-            this.menuRedM.Click += new System.EventHandler(this.menuRedM_Click);
+            // 
+            // menuRedmW
+            // 
+            this.menuRedmW.Image = ((System.Drawing.Image)(resources.GetObject("menuRedmW.Image")));
+            this.menuRedmW.Name = "menuRedmW";
+            this.menuRedmW.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.R)));
+            this.menuRedmW.Size = new System.Drawing.Size(164, 22);
+            this.menuRedmW.Text = "Windows";
+            this.menuRedmW.Click += new System.EventHandler(this.menuRedmW_Click);
+            // 
+            // menuHelp
+            // 
+            this.menuHelp.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuChangelogs,
+            this.separator1,
+            this.menuAbout});
+            this.menuHelp.Image = ((System.Drawing.Image)(resources.GetObject("menuHelp.Image")));
+            this.menuHelp.Name = "menuHelp";
+            this.menuHelp.Size = new System.Drawing.Size(60, 20);
+            this.menuHelp.Text = "Help";
+            // 
+            // menuChangelogs
+            // 
+            this.menuChangelogs.Image = ((System.Drawing.Image)(resources.GetObject("menuChangelogs.Image")));
+            this.menuChangelogs.Name = "menuChangelogs";
+            this.menuChangelogs.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
+            this.menuChangelogs.Size = new System.Drawing.Size(180, 22);
+            this.menuChangelogs.Text = "Changelogs";
+            this.menuChangelogs.Click += new System.EventHandler(this.menuChangelogs_Click);
+            // 
+            // separator1
+            // 
+            this.separator1.Name = "separator1";
+            this.separator1.Size = new System.Drawing.Size(177, 6);
+            // 
+            // menuAbout
+            // 
+            this.menuAbout.Image = ((System.Drawing.Image)(resources.GetObject("menuAbout.Image")));
+            this.menuAbout.Name = "menuAbout";
+            this.menuAbout.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.A)));
+            this.menuAbout.Size = new System.Drawing.Size(180, 22);
+            this.menuAbout.Text = "About...";
+            this.menuAbout.Click += new System.EventHandler(this.menuAbout_Click);
             // 
             // pIndex
             // 
@@ -162,14 +202,17 @@
         private System.Windows.Forms.Timer tProgress;
         private System.Windows.Forms.MenuStrip menuIndex;
         private System.Windows.Forms.ToolStripMenuItem menuFiveM;
-        private System.Windows.Forms.ToolStripMenuItem menuWindows;
-        private System.Windows.Forms.ToolStripMenuItem menuLinux;
+        private System.Windows.Forms.ToolStripMenuItem menuFivemW;
+        private System.Windows.Forms.ToolStripMenuItem menuFivemL;
         private System.Windows.Forms.ToolStripMenuItem menuRedM;
         private System.Windows.Forms.Panel pIndex;
         private System.Windows.Forms.PictureBox fx;
         private System.Windows.Forms.Label signature;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripMenuItem menuClose;
+        private System.Windows.Forms.ToolStripMenuItem menuRedmW;
+        private System.Windows.Forms.ToolStripMenuItem menuHelp;
+        private System.Windows.Forms.ToolStripMenuItem menuChangelogs;
+        private System.Windows.Forms.ToolStripMenuItem menuAbout;
+        private System.Windows.Forms.ToolStripSeparator separator1;
     }
 }
 

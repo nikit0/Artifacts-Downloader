@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Windows.Forms;
 
 namespace Artifacts_Downloader
@@ -10,24 +11,29 @@ namespace Artifacts_Downloader
             InitializeComponent();
         }
 
-        private void menuWindows_Click(object sender, EventArgs e)
+        private void menuFivemW_Click(object sender, EventArgs e)
         {
             openChildForm(new fivemW());
         }
 
-        private void menuLinux_Click(object sender, EventArgs e)
+        private void menuFivemL_Click(object sender, EventArgs e)
         {
             openChildForm(new fivemL());
         }
 
-        private void menuClose_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void menuRedM_Click(object sender, EventArgs e)
+        private void menuRedmW_Click(object sender, EventArgs e)
         {
             openChildForm(new redmW());
+        }
+
+        private void menuChangelogs_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://github.com/nikit0/Artifacts-Downloader/commits/master");
+        }
+
+        private void menuAbout_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://github.com/nikit0/Artifacts-Downloader#readme");
         }
 
         private Form activeForm = null;
@@ -43,6 +49,6 @@ namespace Artifacts_Downloader
             pIndex.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
-        } 
+        }
     }
 }
