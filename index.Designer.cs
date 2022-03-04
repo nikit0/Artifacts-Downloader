@@ -71,35 +71,35 @@
             // menuWindows
             // 
             this.menuWindows.Name = "menuWindows";
-            this.menuWindows.Size = new System.Drawing.Size(180, 22);
+            this.menuWindows.Size = new System.Drawing.Size(123, 22);
             this.menuWindows.Text = "Windows";
             this.menuWindows.Click += new System.EventHandler(this.menuWindows_Click);
             // 
             // menuLinux
             // 
             this.menuLinux.Name = "menuLinux";
-            this.menuLinux.Size = new System.Drawing.Size(180, 22);
+            this.menuLinux.Size = new System.Drawing.Size(123, 22);
             this.menuLinux.Text = "Linux";
             this.menuLinux.Click += new System.EventHandler(this.menuLinux_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(120, 6);
             // 
             // menuClose
             // 
             this.menuClose.Name = "menuClose";
-            this.menuClose.Size = new System.Drawing.Size(180, 22);
+            this.menuClose.Size = new System.Drawing.Size(123, 22);
             this.menuClose.Text = "Close";
             this.menuClose.Click += new System.EventHandler(this.menuClose_Click);
             // 
             // menuRedM
             // 
-            this.menuRedM.Enabled = false;
             this.menuRedM.Name = "menuRedM";
             this.menuRedM.Size = new System.Drawing.Size(50, 20);
             this.menuRedM.Text = "RedM";
+            this.menuRedM.Click += new System.EventHandler(this.menuRedM_Click);
             // 
             // pIndex
             // 

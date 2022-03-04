@@ -25,6 +25,11 @@ namespace Artifacts_Downloader
             Application.Exit();
         }
 
+        private void menuRedM_Click(object sender, EventArgs e)
+        {
+            openChildForm(new redmW());
+        }
+
         private Form activeForm = null;
         private void openChildForm(Form childForm)
         {
@@ -38,6 +43,6 @@ namespace Artifacts_Downloader
             pIndex.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
-        }
+        } 
     }
 }

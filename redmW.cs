@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Artifacts_Downloader
 {
-    public partial class redm : Form
+    public partial class redmW : Form
     {
-        public redm()
+        public redmW()
         {
             InitializeComponent();
         }
