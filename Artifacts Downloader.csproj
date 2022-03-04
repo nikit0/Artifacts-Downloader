@@ -36,14 +36,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>fx.ico</ApplicationIcon>
+    <ApplicationIcon>Assets\fx.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Costura, Version=5.7.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>packages\Costura.Fody.5.7.0\lib\netstandard1.0\Costura.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>dll\Newtonsoft.Json.dll</HintPath>
+      <HintPath>Assets\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -63,39 +63,39 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="fivemL.cs">
+    <Compile Include="FiveM\fivemL.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fivemL.Designer.cs">
+    <Compile Include="FiveM\fivemL.Designer.cs">
       <DependentUpon>fivemL.cs</DependentUpon>
     </Compile>
-    <Compile Include="fivemW.cs">
+    <Compile Include="FiveM\fivemW.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fivemW.Designer.cs">
+    <Compile Include="FiveM\fivemW.Designer.cs">
       <DependentUpon>fivemW.cs</DependentUpon>
     </Compile>
-    <Compile Include="index.cs">
+    <Compile Include="Index\index.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="index.Designer.cs">
+    <Compile Include="Index\index.Designer.cs">
       <DependentUpon>index.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
+    <Compile Include="Index\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="redmW.cs">
+    <Compile Include="RedM\redmW.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="redmW.Designer.cs">
+    <Compile Include="RedM\redmW.Designer.cs">
       <DependentUpon>redmW.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="fivemL.resx">
+    <EmbeddedResource Include="FiveM\fivemL.resx">
       <DependentUpon>fivemL.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fivemW.resx">
+    <EmbeddedResource Include="FiveM\fivemW.resx">
       <DependentUpon>fivemW.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="index.resx">
+    <EmbeddedResource Include="Index\index.resx">
       <DependentUpon>index.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -107,7 +107,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="redmW.resx">
+    <EmbeddedResource Include="RedM\redmW.resx">
       <DependentUpon>redmW.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
@@ -125,7 +125,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="fx.ico" />
+    <Content Include="Assets\fx.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
