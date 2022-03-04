@@ -62,6 +62,10 @@
             this.pgsDownload.TabIndex = 18;
             this.pgsDownload.Click += new System.EventHandler(this.tProgress_Tick);
             // 
+            // tProgress
+            // 
+            this.tProgress.Tick += new System.EventHandler(this.tProgress_Tick);
+            // 
             // txtCritical
             // 
             this.txtCritical.AutoSize = true;
