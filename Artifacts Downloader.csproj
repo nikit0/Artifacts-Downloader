@@ -63,6 +63,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cache\cache.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cache\cache.Designer.cs">
+      <DependentUpon>cache.cs</DependentUpon>
+    </Compile>
     <Compile Include="FiveM\fivemL.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +95,9 @@
     <Compile Include="RedM\redmW.Designer.cs">
       <DependentUpon>redmW.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Cache\cache.resx">
+      <DependentUpon>cache.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FiveM\fivemL.resx">
       <DependentUpon>fivemL.cs</DependentUpon>
     </EmbeddedResource>

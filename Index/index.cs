@@ -21,6 +21,11 @@ namespace Artifacts_Downloader
             openChildForm(new fivemL());
         }
 
+        private void menuFivemC_Click(object sender, EventArgs e)
+        {
+            openChildForm(new cache());
+        }
+
         private void menuRedmW_Click(object sender, EventArgs e)
         {
             openChildForm(new redmW());
