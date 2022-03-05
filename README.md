@@ -22,6 +22,7 @@
 - [x] FiveM Artifacts Linux Version
 - [x] RedM Artifacts Version
 - [x] FiveM Cache ( Client / Server )
+- [ ] RedM Cache ( Client / Server )
 
 #
 
