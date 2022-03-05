@@ -41,6 +41,10 @@
             this.btnCacheS = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
+            // tProgress
+            // 
+            this.tProgress.Tick += new System.EventHandler(this.tProgress_Tick);
+            // 
             // signature
             // 
             this.signature.AutoSize = true;

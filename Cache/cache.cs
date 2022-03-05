@@ -39,6 +39,10 @@ namespace Artifacts_Downloader
 
         private void clearCache(string folder)
         {
+            buttonsBlock(false);
+            pgsDownload.Value = 0;
+            tProgress.Start();
+
             string pathC = Environment.ExpandEnvironmentVariables($@"C:\Users\%USERNAME%\AppData\Local\FiveM\FiveM.app\data\{folder}");
             string pathS = Environment.ExpandEnvironmentVariables($@".\{folder}");
 
@@ -51,6 +55,28 @@ namespace Artifacts_Downloader
             {
                 Directory.Delete(pathS, true);
             } 
+        }
+
+        private void tProgress_Tick(object sender, EventArgs e)
+        {
+            if (pgsDownload.Value < 100)
+            {
+                pgsDownload.Value += 20;
+            }
+            else
+            {
+                tProgress.Stop();
+                buttonsBlock(true);
+            }
+        }
+
+        private void buttonsBlock(bool status)
+        {
+            btnCacheC.Enabled = status;
+            btnGameC.Enabled = status;
+            btnNuiC.Enabled = status;
+            btnServerC.Enabled = status;
+            btnCacheS.Enabled = status;
         }
     }
 }
