@@ -7,9 +7,9 @@ using System.Windows.Forms;
 
 namespace Artifacts_Downloader
 {
-    public partial class index : Form
+    public partial class fivemL : Form
     {
-        public index()
+        public fivemL()
         {
             InitializeComponent();
             updateTextVersion("recommended");
@@ -45,7 +45,7 @@ namespace Artifacts_Downloader
             tProgress.Start();
 
             WebClient client = new WebClient();
-            string url = client.DownloadString("https://changelogs-live.fivem.net/api/changelog/versions/win32/server");
+            string url = client.DownloadString("https://changelogs-live.fivem.net/api/changelog/versions/linux/server");
             dynamic dynamic = JsonConvert.DeserializeObject<dynamic>(url);
             string temp = dynamic[file];
             if (Directory.Exists("artifacts"))
@@ -57,18 +57,13 @@ namespace Artifacts_Downloader
             {
                 Directory.CreateDirectory("artifacts");
             }
-            client.DownloadFile(temp, $@"artifacts\{file}.zip");
-
-            string zipFilePath = $@"artifacts\{file}.zip";
-            string extractionPath = @"artifacts";
-            ZipFile.ExtractToDirectory(zipFilePath, extractionPath);
-            File.Delete(zipFilePath);
+            client.DownloadFile(temp, $@"artifacts\{file}.tar.xz");
         }
 
         private void updateTextVersion(string file)
         {
             WebClient client = new WebClient();
-            string url = client.DownloadString("https://changelogs-live.fivem.net/api/changelog/versions/win32/server");
+            string url = client.DownloadString("https://changelogs-live.fivem.net/api/changelog/versions/linux/server");
             dynamic dynamic = JsonConvert.DeserializeObject<dynamic>(url);
             string temp = dynamic[file];
 
@@ -93,13 +88,13 @@ namespace Artifacts_Downloader
         private void tProgress_Tick(object sender, EventArgs e)
         {
             if (pgsDownload.Value < 100)
-            {   
+            {
                 pgsDownload.Value += 20;
-            } 
+            }
             else
             {
                 tProgress.Stop();
-                MessageBox.Show("Download and Extracted completed.","Warning");
+                MessageBox.Show("Download and Extracted completed.", "Warning");
                 buttonsBlock(true);
             }
         }
