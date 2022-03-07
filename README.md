@@ -14,7 +14,7 @@
 
 # Cache Options
 
-![image](https://user-images.githubusercontent.com/45583155/156867501-084ff262-4a2b-43eb-ac30-bd8f24fadb11.png)
+![image](https://user-images.githubusercontent.com/45583155/156963700-6213fe68-a0ac-472a-a8b0-0b4d58561724.png)
 
 ### Features
 
@@ -22,7 +22,7 @@
 - [x] FiveM Artifacts Linux Version
 - [x] RedM Artifacts Version
 - [x] FiveM Cache ( Client / Server )
-- [ ] RedM Cache ( Client / Server )
+- [x] RedM Cache ( Client / Server )
 
 #
 

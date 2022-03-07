@@ -63,11 +63,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cache\cache.cs">
+    <Compile Include="FiveM\fivemC.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Cache\cache.Designer.cs">
-      <DependentUpon>cache.cs</DependentUpon>
+    <Compile Include="FiveM\fivemC.Designer.cs">
+      <DependentUpon>fivemC.cs</DependentUpon>
     </Compile>
     <Compile Include="FiveM\fivemL.cs">
       <SubType>Form</SubType>
@@ -89,14 +89,20 @@
     </Compile>
     <Compile Include="Index\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RedM\redmC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RedM\redmC.Designer.cs">
+      <DependentUpon>redmC.cs</DependentUpon>
+    </Compile>
     <Compile Include="RedM\redmW.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="RedM\redmW.Designer.cs">
       <DependentUpon>redmW.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Cache\cache.resx">
-      <DependentUpon>cache.cs</DependentUpon>
+    <EmbeddedResource Include="FiveM\fivemC.resx">
+      <DependentUpon>fivemC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FiveM\fivemL.resx">
       <DependentUpon>fivemL.cs</DependentUpon>
@@ -116,6 +122,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="RedM\redmC.resx">
+      <DependentUpon>redmC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="RedM\redmW.resx">
       <DependentUpon>redmW.cs</DependentUpon>
     </EmbeddedResource>
