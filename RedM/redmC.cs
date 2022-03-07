@@ -4,9 +4,9 @@ using System.Windows.Forms;
 
 namespace Artifacts_Downloader
 {
-    public partial class cache : Form
+    public partial class redmC : Form
     {
-        public cache()
+        public redmC()
         {
             InitializeComponent();
         }
@@ -43,7 +43,7 @@ namespace Artifacts_Downloader
             pgsDownload.Value = 0;
             tProgress.Start();
 
-            string pathC = Environment.ExpandEnvironmentVariables($@"C:\Users\%USERNAME%\AppData\Local\FiveM\FiveM.app\data\{folder}");
+            string pathC = Environment.ExpandEnvironmentVariables($@"C:\Users\%USERNAME%\AppData\Local\RedM\RedM.app\data\{folder}");
             string pathS = Environment.ExpandEnvironmentVariables($@".\{folder}");
 
             if (Directory.Exists(pathC))
@@ -54,7 +54,7 @@ namespace Artifacts_Downloader
             if (Directory.Exists(pathS))
             {
                 Directory.Delete(pathS, true);
-            } 
+            }
         }
 
         private void tProgress_Tick(object sender, EventArgs e)

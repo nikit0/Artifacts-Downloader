@@ -39,6 +39,8 @@
             this.menuFivemC = new System.Windows.Forms.ToolStripMenuItem();
             this.menuRedM = new System.Windows.Forms.ToolStripMenuItem();
             this.menuRedmW = new System.Windows.Forms.ToolStripMenuItem();
+            this.separatorRedm = new System.Windows.Forms.ToolStripSeparator();
+            this.menuRedmC = new System.Windows.Forms.ToolStripMenuItem();
             this.menuHelp = new System.Windows.Forms.ToolStripMenuItem();
             this.menuChangelogs = new System.Windows.Forms.ToolStripMenuItem();
             this.separatorHelp = new System.Windows.Forms.ToolStripSeparator();
@@ -79,8 +81,7 @@
             // 
             this.menuFivemW.Image = ((System.Drawing.Image)(resources.GetObject("menuFivemW.Image")));
             this.menuFivemW.Name = "menuFivemW";
-            this.menuFivemW.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.W)));
-            this.menuFivemW.Size = new System.Drawing.Size(180, 22);
+            this.menuFivemW.Size = new System.Drawing.Size(123, 22);
             this.menuFivemW.Text = "Windows";
             this.menuFivemW.Click += new System.EventHandler(this.menuFivemW_Click);
             // 
@@ -88,29 +89,29 @@
             // 
             this.menuFivemL.Image = ((System.Drawing.Image)(resources.GetObject("menuFivemL.Image")));
             this.menuFivemL.Name = "menuFivemL";
-            this.menuFivemL.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.L)));
-            this.menuFivemL.Size = new System.Drawing.Size(180, 22);
+            this.menuFivemL.Size = new System.Drawing.Size(123, 22);
             this.menuFivemL.Text = "Linux";
             this.menuFivemL.Click += new System.EventHandler(this.menuFivemL_Click);
             // 
             // separatorFivem
             // 
             this.separatorFivem.Name = "separatorFivem";
-            this.separatorFivem.Size = new System.Drawing.Size(177, 6);
+            this.separatorFivem.Size = new System.Drawing.Size(120, 6);
             // 
             // menuFivemC
             // 
             this.menuFivemC.Image = ((System.Drawing.Image)(resources.GetObject("menuFivemC.Image")));
             this.menuFivemC.Name = "menuFivemC";
-            this.menuFivemC.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Delete)));
-            this.menuFivemC.Size = new System.Drawing.Size(180, 22);
+            this.menuFivemC.Size = new System.Drawing.Size(123, 22);
             this.menuFivemC.Text = "Cache";
             this.menuFivemC.Click += new System.EventHandler(this.menuFivemC_Click);
             // 
             // menuRedM
             // 
             this.menuRedM.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menuRedmW});
+            this.menuRedmW,
+            this.separatorRedm,
+            this.menuRedmC});
             this.menuRedM.Image = ((System.Drawing.Image)(resources.GetObject("menuRedM.Image")));
             this.menuRedM.Name = "menuRedM";
             this.menuRedM.Size = new System.Drawing.Size(66, 20);
@@ -120,10 +121,22 @@
             // 
             this.menuRedmW.Image = ((System.Drawing.Image)(resources.GetObject("menuRedmW.Image")));
             this.menuRedmW.Name = "menuRedmW";
-            this.menuRedmW.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.R)));
-            this.menuRedmW.Size = new System.Drawing.Size(180, 22);
+            this.menuRedmW.Size = new System.Drawing.Size(123, 22);
             this.menuRedmW.Text = "Windows";
             this.menuRedmW.Click += new System.EventHandler(this.menuRedmW_Click);
+            // 
+            // separatorRedm
+            // 
+            this.separatorRedm.Name = "separatorRedm";
+            this.separatorRedm.Size = new System.Drawing.Size(120, 6);
+            // 
+            // menuRedmC
+            // 
+            this.menuRedmC.Image = ((System.Drawing.Image)(resources.GetObject("menuRedmC.Image")));
+            this.menuRedmC.Name = "menuRedmC";
+            this.menuRedmC.Size = new System.Drawing.Size(123, 22);
+            this.menuRedmC.Text = "Cache";
+            this.menuRedmC.Click += new System.EventHandler(this.menuRedmC_Click);
             // 
             // menuHelp
             // 
@@ -140,7 +153,6 @@
             // 
             this.menuChangelogs.Image = ((System.Drawing.Image)(resources.GetObject("menuChangelogs.Image")));
             this.menuChangelogs.Name = "menuChangelogs";
-            this.menuChangelogs.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
             this.menuChangelogs.Size = new System.Drawing.Size(180, 22);
             this.menuChangelogs.Text = "Changelogs";
             this.menuChangelogs.Click += new System.EventHandler(this.menuChangelogs_Click);
@@ -154,7 +166,6 @@
             // 
             this.menuAbout.Image = ((System.Drawing.Image)(resources.GetObject("menuAbout.Image")));
             this.menuAbout.Name = "menuAbout";
-            this.menuAbout.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.A)));
             this.menuAbout.Size = new System.Drawing.Size(180, 22);
             this.menuAbout.Text = "About...";
             this.menuAbout.Click += new System.EventHandler(this.menuAbout_Click);
@@ -233,6 +244,8 @@
         private System.Windows.Forms.ToolStripSeparator separatorHelp;
         private System.Windows.Forms.ToolStripSeparator separatorFivem;
         private System.Windows.Forms.ToolStripMenuItem menuFivemC;
+        private System.Windows.Forms.ToolStripSeparator separatorRedm;
+        private System.Windows.Forms.ToolStripMenuItem menuRedmC;
     }
 }
 
